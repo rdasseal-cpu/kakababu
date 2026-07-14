@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to KakaBabu, a modern Bengali Bistro & Cafe. Experience Kolkata's legendary tea cabin snacks, clay-pot tea, and warm adda vibes in a premium, contemporary space.">
+  <title>KakaBabu — Modern Bengali Bistro &amp; Cafe</title>
+
+  <!-- Google Fonts: Kalam (Accent), Space Grotesk (Tech-sans), Syne (Chunky Display), Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-glow" class="custom-cursor-glow"></div>
+
+  <!-- Sticky Side Dot Navigation -->
+  <nav id="side-nav-dots" class="side-nav-dots" aria-label="Page Sections Navigation">
+    <a href="#hero" class="dot active" data-section="hero" aria-label="Go to Home"><span
+        class="tooltip">KakaBabu</span></a>
+    <a href="#story" class="dot" data-section="story" aria-label="Go to Our Story"><span class="tooltip">Our
+        Story</span></a>
+    <a href="#dishes" class="dot" data-section="dishes" aria-label="Go to Cabin Bites"><span class="tooltip">Signature
+        Bites</span></a>
+    <a href="#gallery" class="dot" data-section="gallery" aria-label="Go to Adda Gallery"><span class="tooltip">Adda
+        Gallery</span></a>
+    <a href="#reviews" class="dot" data-section="reviews" aria-label="Go to Google Reviews"><span
+        class="tooltip">Reviews</span></a>
+    <a href="#visit-us" class="dot" data-section="visit-us" aria-label="Go to Visit Us"><span class="tooltip">Visit
+        Us</span></a>
+  </nav>
+
+  <!-- Sticky Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#hero" class="logo-link">
+          <div class="logo-brand-wrapper">
+            <img src="img/logo.png" alt="KakaBabu Logo" class="logo-img">
+            <div class="logo-text-wrapper">
+              <span class="logo-accent">কাকাবাবু</span>
+              <span class="logo-text">KakaBabu</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#dishes" class="nav-link">Signature Bites</a>
+        <a href="#gallery" class="nav-link">Ambience</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#visit-us" class="nav-link">Visit Us</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="#story" class="mobile-nav-link">Our Story</a>
+      <a href="#dishes" class="mobile-nav-link">Signature Bites</a>
+      <a href="#gallery" class="mobile-nav-link">Ambience</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#visit-us" class="mobile-nav-link">Visit Us</a>
+    </div>
+  </div>
+
+  <!-- Main Scrollable Container -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section scroll-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-bg-image"></div>
+      <div class="hero-content">
+        <div class="stamp-ornament animated-stamp">
+          <svg viewBox="0 0 100 100" class="vintage-stamp-svg">
+            <polygon points="50,5 95,25 95,75 50,95 5,75 5,25" fill="none" stroke="#F4B400" stroke-width="2" />
+            <polygon points="50,12 88,29 88,71 50,88 12,71 12,29" fill="none" stroke="#C1272D" stroke-width="1.5" />
+            <text x="50" y="55" font-family="'Kalam', cursive" font-size="28" font-weight="bold" fill="#F4B400"
+              text-anchor="middle">ক</text>
+          </svg>
+        </div>
+        <h1 class="hero-title">KakaBabu</h1>
+        <p class="hero-subtitle">Cha, Chop, aar Adda</p>
+        <p class="hero-description">Kolkata's iconic tea-cabin culture reimagined in a sleek modern bistro. Drop by for
+          freshly brewed tea, crispy bites, and conversations that flow endlessly.</p>
+
+        <!-- Interactive Steam Cup/Platter Graphic -->
+        <div class="steam-cup-container">
+          <div class="cup-wrapper">
+            <svg class="clay-cup-svg" viewBox="0 0 100 80">
+              <path d="M15,20 C15,20 18,70 50,70 C82,70 85,20 85,20 Z" fill="#b15e3c" />
+              <path d="M10,20 L90,20 C90,20 92,15 50,15 C8,15 10,20 10,20 Z" fill="#c37250" />
+              <!-- Cup rim shadow -->
+              <ellipse cx="50" cy="20" rx="40" ry="5" fill="#8d4221" />
+            </svg>
+            <div class="steam-lines">
+              <div class="steam-line steam-1"></div>
+              <div class="steam-line steam-2"></div>
+              <div class="steam-line steam-3"></div>
+              <div class="steam-line steam-4"></div>
+            </div>
+          </div>
+          <p class="steam-label">Your steaming cup of tea awaits...</p>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#dishes" class="btn primary-action-btn">View Menu</a>
+          <a href="#story" class="btn secondary-action-btn">Our Story</a>
+        </div>
+      </div>
+      <div class="scroll-down-indicator">
+        <span class="mouse-icon"><span class="wheel"></span></span>
+        <span class="arrow-down"></span>
+      </div>
+    </section>
+
+    <!-- Our Story Section (Editorial Layout) -->
+    <section id="story" class="story-section scroll-section">
+      <div class="bg-pattern-dots"></div>
+      <div class="section-container">
+        <div class="story-layout animate-on-scroll">
+
+          <!-- Modern Media Grid -->
+          <div class="story-media">
+            <div class="vintage-signboard-wrapper">
+              <div class="handpainted-signboard">
+                <span class="sign-bengali">কাকাবাবু ক্যাফে</span>
+                <span class="sign-english">ESTD. 1969</span>
+              </div>
+            </div>
+
+            <div class="polaroid-story-wrapper">
+              <img src="img/Ambians/IMG20260713195113.jpg.jpeg" alt="KakaBabu Cafe Counter" class="story-polaroid-img">
+              <div class="polaroid-caption">KakaBabu Cafe Counter</div>
+            </div>
+
+            <!-- Modernized Tram Ticket Stub (Clean, high contrast) -->
+            <div class="tram-ticket-deco">
+              <div class="ticket-header">CTC • ADDA CABIN PASS</div>
+              <div class="ticket-body">
+                <div class="ticket-row">
+                  <span>CABIN: NO. 9</span>
+                  <span>FARE: MEMORIES</span>
+                </div>
+                <div class="ticket-route">ESPLANADE TO SOULFUL CHATS</div>
+                <div class="ticket-serial">No. 202607</div>
+              </div>
+              <div class="ticket-footer">Valid for endless tea rounds</div>
+            </div>
+          </div>
+
+          <!-- Sleek Editorial Card containing Story -->
+          <div class="story-card-wrapper">
+            <div class="torn-paper-card modern-card">
+              <!-- Minimalist red wax seal stamp -->
+              <div class="wax-seal-wrapper">
+                <div class="wax-seal">
+                  <span class="seal-letter">KB</span>
+                </div>
+              </div>
+
+              <h2 class="section-title">The Story of Kaka</h2>
+              <div class="card-content">
+                <p class="story-highlight">"Nostalgia brewed fresh daily. Conversations served warm."</p>
+                <p>KakaBabu was envisioned in 1969 by our beloved 'Kaka' (Uncle) — a storyteller, and tea enthusiast who
+                  believed that the best ideas are born over clinking tea cups and hot cutlets. He designed KakaBabu not
+                  merely as a culinary stop, but as a sanctuary for *adda* — the legendary Bengali art of informal,
+                  soulful conversation.</p>
+                <p>Today, we have reimagined Kaka's original tea cabin for the modern era. We've preserved the essence
+                  of Kalyani's heritage — the warmth, the spices, and the legendary recipes — and infused them into a
+                  sleek, contemporary bistro space.</p>
+                <p>Here, clean lines meet warm turmeric glow, and traditional clay cups sit beautifully alongside modern
+                  pour-overs. Pull up a chair, order a classic cutlet, and share a story. You belong to the adda now.
+                </p>
+              </div>
+              <div class="story-signature">
+                <p class="sig-title">Always Yours,</p>
+                <p class="sig-name">Kaka &amp; Co.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Snacks Section (Ceramic Platter Grid) -->
+    <section id="dishes" class="dishes-section scroll-section">
+      <div class="section-container">
+        <div class="text-center animate-on-scroll">
+          <h2 class="section-title text-yellow">Kaka's Cabin Bites</h2>
+          <p class="section-subtitle">Sleek interpretation of classic Kolkata tea-cabin delicacies. Toggle to view
+            physical menu cards.</p>
+        </div>
+
+        <!-- Menu Navigation Tabs -->
+        <div class="menu-tabs-container animate-on-scroll">
+          <button class="menu-tab-btn active" data-tab="digital-highlights" id="tab-digital">
+            <span class="btn-text">Browse Highlights</span>
+          </button>
+          <a href="menu.html" class="menu-tab-btn menu-btn-link" id="btn-full-menu">
+            <span class="btn-text">Explore Menu Card →</span>
+          </a>
+        </div>
+
+        <!-- Tab 1: Digital Highlights Bento Grid -->
+        <div id="digital-highlights" class="menu-tab-content active animate-on-scroll">
+          <div class="bento-menu-grid">
+
+            <!-- Bento Box 1: Fish Kabiraji (Large Feature 2x2) -->
+            <div class="bento-card bento-large-feature bento-color-cream" data-dish="kabiraji">
+              <div class="bento-img-container">
+                <img src="img/food/fish kabiraji.png"
+                  alt="Fish Kabiraji">
+                <span class="bento-badge badge-red">BEST SELLER 🔥</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Fish Kabiraji</h3>
+                  <span class="bento-price">₹120</span>
+                </div>
+                <p class="bento-desc">Premium fish fillet deep-fried and enveloped in a legendary, delicate nest of
+                  crispy egg-floss. Classic Kolkata cabin style.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Crunch Factor</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-red" style="width: 0%;" data-width="95%"></div>
+                    </div>
+                  </div>
+                  <div class="stat-row">
+                    <span class="stat-name">Nostalgia Level</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-yellow" style="width: 0%;" data-width="90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box 2: Veg Sandwich (Square 1x1) -->
+            <div class="bento-card bento-square bento-color-yellow" data-dish="sandwich">
+              <div class="bento-img-container">
+                <img src="img/food/sandwitch.webp" alt="Veg Sandwich">
+                <span class="bento-badge badge-charcoal">VEG 🌟</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Veg Sandwich</h3>
+                  <span class="bento-price">₹100</span>
+                </div>
+                <p class="bento-desc">Fresh garden cucumbers, tomatoes, and potatoes layered with cheese slice and mint
+                  chutney.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Freshness</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-red" style="width: 0%;" data-width="95%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box 3: Chicken Kulhad Pizza (Tall 1x2) -->
+            <div class="bento-card bento-tall bento-color-pink" data-dish="kulhadpizza">
+              <div class="bento-img-container">
+                <img src="img/food/khulad pizza.webp" alt="Chicken Kulhad Pizza">
+                <span class="bento-badge badge-red">HEAVY MUNCH 🍕</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Chicken Kulhad Pizza</h3>
+                  <span class="bento-price">₹180</span>
+                </div>
+                <p class="bento-desc">Traditional clay kulhad loaded with spiced chicken mince, capsicum, signature
+                  marinara, and gooey melted mozzarella cheese.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Cheese Pull</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-charcoal" style="width: 0%;" data-width="95%"></div>
+                    </div>
+                  </div>
+                  <div class="stat-row">
+                    <span class="stat-name">Clay Aroma</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-red" style="width: 0%;" data-width="98%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box 4: Chicken Roll (Square 1x1) -->
+            <div class="bento-card bento-square bento-color-blue" data-dish="chickenroll">
+              <div class="bento-img-container">
+                <img src="img/food/chichken roll.webp" alt="Chicken Roll">
+                <span class="bento-badge badge-yellow">POPULAR 🌯</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Chicken Roll</h3>
+                  <span class="bento-price">₹90</span>
+                </div>
+                <p class="bento-desc">Spiced tender chicken chunks wrapped in a flaky handmade egg-paratha wrap.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Juiciness</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-charcoal" style="width: 0%;" data-width="96%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box 5: Egg Toast (Square 1x1) -->
+            <div class="bento-card bento-square bento-color-cream" data-dish="eggtoast">
+              <div class="bento-img-container">
+                <img src="img/food/egg toas.webp" alt="Egg Toast">
+                <span class="bento-badge badge-red">BREAKFAST 🍳</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Egg Toast</h3>
+                  <span class="bento-price">₹50</span>
+                </div>
+                <p class="bento-desc">Traditional white bread coated in seasoned egg batter and griddle-fried until
+                  soft-golden.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Softness</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-yellow" style="width: 0%;" data-width="90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box 6: Chai & Biscuit Combo (Wide 2x1) -->
+            <div class="bento-card bento-wide bento-color-yellow" data-dish="chaibiscuit">
+              <div class="bento-img-container">
+                <img src="img/food/chai and biscute.webp" alt="Chai &amp; Biscuit Combo">
+                <span class="bento-badge badge-charcoal">MUST TRY ☕</span>
+              </div>
+              <div class="bento-details">
+                <div class="bento-title-row">
+                  <h3>Chai &amp; Biscuit Combo</h3>
+                  <span class="bento-price">₹40</span>
+                </div>
+                <p class="bento-desc">Kaka's aromatic hot clay-pot Milk Tea served with classic crunchy cabin biscuits
+                  for perfect evening adda sessions.</p>
+                <div class="bento-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Adda Vibe</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-red" style="width: 0%;" data-width="100%"></div>
+                    </div>
+                  </div>
+                  <div class="stat-row">
+                    <span class="stat-name">Crispness</span>
+                    <div class="stat-bar">
+                      <div class="stat-fill fill-charcoal" style="width: 0%;" data-width="95%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Ambience Section (Sleek Hanging Grid) -->
+    <section id="gallery" class="gallery-section scroll-section">
+      <div class="section-container">
+        <div class="text-center animate-on-scroll">
+          <h2 class="section-title">The Adda Gallery</h2>
+          <p class="section-subtitle">Catch a glimpse of the modern aesthetic bridging nostalgic memories.</p>
+        </div>
+
+        <!-- Polaroid modern minimalist setup -->
+        <div class="polaroid-gallery-wrapper animate-on-scroll">
+          <div class="clothesline-wire"></div>
+
+          <div class="polaroids-strip" id="polaroids-strip">
+            <!-- Polaroid 1 -->
+            <div class="polaroid-card item-rotated-left">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195113.jpg.jpeg" alt="KakaBabu Cafe Counter">
+              </div>
+              <div class="polaroid-note">Welcome to Kaka's Counter.</div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid-card item-rotated-right">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195136.jpg.jpeg" alt="Cozy Cabin Seating">
+              </div>
+              <div class="polaroid-note">Cabin seating and warm adda vibes.</div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid-card item-rotated-left">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195147.jpg.jpeg" alt="Lush Cafe Interior">
+              </div>
+              <div class="polaroid-note">Contemporary design, historical roots.</div>
+            </div>
+
+            <!-- Polaroid 4 -->
+            <div class="polaroid-card item-rotated-right">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195223.jpg.jpeg" alt="Clay-pot Tea">
+              </div>
+              <div class="polaroid-note">Artisanal 'Cha' brewed slow and fresh.</div>
+            </div>
+
+            <!-- Polaroid 5 -->
+            <div class="polaroid-card item-rotated-left">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195236.jpg.jpeg" alt="Cafe Seating Setup">
+              </div>
+              <div class="polaroid-note">Afternoons defined by plates and chats.</div>
+            </div>
+
+            <!-- Polaroid 6 -->
+            <div class="polaroid-card item-rotated-right">
+              <div class="peg"></div>
+              <div class="polaroid-img-box">
+                <img src="img/Ambians/IMG20260713195245.jpg.jpeg" alt="Vintage Cafe Corner">
+              </div>
+              <div class="polaroid-note">Sweetening conversations daily.</div>
+            </div>
+          </div>
+
+          <div class="gallery-navigation">
+            <span class="gallery-tip">← Drag or swipe to scroll the gallery →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section (Neo-Brutalist Google Reviews Wall) -->
+    <section id="reviews" class="reviews-section scroll-section">
+      <div class="section-container">
+        <div class="text-center animate-on-scroll">
+          <h2 class="section-title text-yellow">Vibe Checked</h2>
+          <p class="section-subtitle">Real feedback and ratings shared by local foodies and Google local guides.</p>
+        </div>
+
+        <!-- Google Review Summary Header -->
+        <div class="review-summary-wrapper animate-on-scroll">
+          <div class="review-summary-card">
+            <div class="pin pin-brass"></div>
+            <img src="img/reviews/Screenshot%202026-07-10%20122235.png" alt="Google review summary">
+          </div>
+        </div>
+
+        <!-- Google Reviews Collage Grid -->
+        <div class="corkboard animate-on-scroll">
+          <div class="corkboard-frame modern-board-frame"></div>
+
+          <div class="corkboard-grid">
+            <!-- Review 1 (Sumit Ghoshal) -->
+            <div class="review-screenshot-card card-yellow rotated-left">
+              <div class="pin pin-red"></div>
+              <div class="review-image-wrapper">
+                <img src="img/reviews/Screenshot%202026-07-10%20121316.png" alt="Sumit Ghoshal Review">
+                <div class="name-blur-overlay blur-standard"></div>
+              </div>
+            </div>
+
+            <!-- Review 2 (Suhanraj Chakraborty) -->
+            <div class="review-screenshot-card card-pink rotated-right">
+              <div class="pin pin-blue"></div>
+              <div class="review-image-wrapper">
+                <img src="img/reviews/Screenshot%202026-07-10%20121346.png" alt="Suhanraj Chakraborty Review">
+                <div class="name-blur-overlay blur-standard"></div>
+              </div>
+            </div>
+
+            <!-- Review 3 (Animesh Sarkar) -->
+            <div class="review-screenshot-card card-blue rotated-left">
+              <div class="pin pin-brass"></div>
+              <div class="review-image-wrapper">
+                <img src="img/reviews/Screenshot%202026-07-10%20121503.png" alt="Animesh Sarkar Review">
+                <div class="name-blur-overlay blur-standard"></div>
+              </div>
+            </div>
+
+            <!-- Review 4 (Shraban Kundu) -->
+            <div class="review-screenshot-card card-green rotated-right">
+              <div class="pin pin-red"></div>
+              <div class="review-image-wrapper">
+                <img src="img/reviews/Screenshot%202026-07-10%20121550.png" alt="Shraban Kundu Review">
+                <div class="name-blur-overlay blur-short"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Us / Footer Section (Sleek Perforated Ticket Style) -->
+    <section id="visit-us" class="visit-section scroll-section">
+      <div class="section-container">
+
+        <!-- Large Modernized Ticket Stub Layout -->
+        <div class="ticket-stub-wrapper animate-on-scroll">
+          <div class="ticket-stub modern-ticket">
+            <div class="ticket-left-stub">
+              <div class="stub-bengali-seal">কাকাবাবু ক্যাফে</div>
+              <div class="stub-serial">No. 1969-2026</div>
+              <div class="stub-pricing">
+                <span>ADMIT ONE</span>
+                <span class="large-price">ADDA HOUR</span>
+                <span>Entry Included</span>
+              </div>
+            </div>
+
+            <div class="ticket-perforation"></div>
+
+            <div class="ticket-right-stub">
+              <div class="ticket-stub-title">
+                <h2>KakaBabu Cafe</h2>
+                <p class="tagline">Traditional Bites. Modern Beats.</p>
+              </div>
+
+              <div class="ticket-info-grid">
+                <div class="info-block">
+                  <h3>VISIT US</h3>
+                  <p>Kalyani Highway More,<br>Kanchrapara Loco, Jonepur,<br>Kanchrapara, WB 743145</p>
+                </div>
+
+                <div class="info-block">
+                  <h3>CABIN HOURS</h3>
+                  <p><strong>Every Day:</strong> 4:00 PM - 10:00 PM</p>
+
+                </div>
+
+                <div class="info-block">
+                  <h3>CONNECT</h3>
+                  <p><strong>Phone:</strong> +91 8820507604</p>
+                  <p><strong>Email:</strong></p>
+                </div>
+              </div>
+
+              <!-- Real Google Map iframe -->
+              <div class="map-stub-wrapper">
+                <iframe class="google-map-iframe" src="https://maps.google.com/maps?q=KakaBabu+Cafe,+Kanchrapara&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%"
+                  height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <a href="https://maps.app.goo.gl/d5aiezc1KUmeYkrv8" target="_blank" class="map-direct-link" style="display: block; text-align: center; margin-top: 10px; font-family: var(--font-tech); font-weight: 700; color: var(--primary-red); text-decoration: underline;">Open in Google Maps ↗</a>
+
+              <div class="stub-footer">
+                <div class="social-links">
+                  <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                  <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                  <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+                </div>
+                <div class="ticket-validation">DESIGNED FOR WARM CONVERSATIONS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <footer class="footer-bottom">
+        <p>&copy; 2026 KakaBabu Bistro Cafe. Handcrafted with modern design &amp; nostalgic warmth.</p>
+        <p class="sub-text">Brewed Fresh. Shared Daily.</p>
+      </footer>
+    </section>
+
+  </main>
+
+
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
